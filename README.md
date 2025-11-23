@@ -48,9 +48,3 @@ This project helps users learn sorting logic step-by-step using real-time animat
 - **CSS3**  
 - **JavaScript (Vanilla JS)**  
 
----
-
-## 📁 Project Structure
-
-
-
