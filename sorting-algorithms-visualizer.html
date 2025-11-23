@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithms Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔢 Sorting Algorithms Visualizer</h1>
+        <p class="subtitle">Learn and visualize how different sorting algorithms work</p>
+
+        <div class="controls">
+            <select id="algorithm">
+                <option value="bubble">Bubble Sort</option>
+                <option value="selection">Selection Sort</option>
+                <option value="insertion">Insertion Sort</option>
+                <option value="merge">Merge Sort</option>
+                <option value="quick">Quick Sort</option>
+                <option value="heap">Heap Sort</option>
+            </select>
+
+            <div class="slider-container">
+                <label>Array Size: <span id="sizeValue">50</span></label>
+                <input type="range" id="arraySize" min="10" max="100" value="50">
+            </div>
+
+            <div class="slider-container">
+                <label>Speed: <span id="speedValue">50</span>ms</label>
+                <input type="range" id="speed" min="10" max="200" value="50">
+            </div>
+
+            <button id="generateArray">New Array</button>
+            <button id="startSort">Start Sort</button>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);"></div>
+                <span>Unsorted</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: linear-gradient(180deg, #f093fb 0%, #f5576c 100%);"></div>
+                <span>Comparing</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: linear-gradient(180deg, #fa709a 0%, #fee140 100%);"></div>
+                <span>Pivot</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: linear-gradient(180deg, #4facfe 0%, #00f2fe 100%);"></div>
+                <span>Sorted</span>
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-value" id="comparisons">0</div>
+                <div class="stat-label">Comparisons</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="swaps">0</div>
+                <div class="stat-label">Swaps</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value" id="time">0</div>
+                <div class="stat-label">Time (ms)</div>
+            </div>
+        </div>
+
+        <div class="visualization" id="visualization"></div>
+
+        <div class="info-section" id="algorithmInfo"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
