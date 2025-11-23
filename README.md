@@ -42,14 +42,6 @@ This project helps users learn sorting logic step-by-step using real-time animat
 
 ---
 
-## 🖼️ Screenshot / Demo
-
-> *(Add images or GIFs here)*  
-> Example placeholder:  
-> `![Visualizer Screenshot](assets/screenshot.png)`
-
----
-
 ## 🛠️ Tech Stack
 
 - **HTML5**  
